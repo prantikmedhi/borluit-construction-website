@@ -1,0 +1,10 @@
+.git/
+.vercel/
+node_modules/
+dist/
+qa-artifacts/
+claude-build.json
+docs/build-brief.md
+logs/
+*.log
+.DS_Store

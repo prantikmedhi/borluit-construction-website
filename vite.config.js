@@ -7,10 +7,10 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 function conceptCards() {
   return concepts
     .map(
-      (c, i) => `
+      (c) => `
         <li class="concept" data-category="${c.category}">
           <button type="button" class="concept__button" data-concept="${c.id}" aria-haspopup="dialog">
-            <img src="/${c.file}" alt="${esc(conceptLabel)}: ${esc(c.title)}. ${esc(c.description)}" width="${c.width}" height="${c.height}" loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async">
+            <img src="/${c.id === 'hero-house' ? 'images/hero-house-960.webp' : c.file}" ${c.id === 'hero-house' ? 'srcset="/images/hero-house-960.webp 960w, /images/hero-house-1440.webp 1440w, /images/hero-house.webp 1536w" sizes="(min-width: 960px) 60vw, 100vw"' : ''} alt="${esc(conceptLabel)}: ${esc(c.title)}. ${esc(c.description)}" width="${c.width}" height="${c.height}" loading="lazy" fetchpriority="low" decoding="async">
             <span class="concept__meta">
               <span class="concept__title">${esc(c.title)}</span>
               <span class="concept__label">${esc(conceptLabel)}</span>
