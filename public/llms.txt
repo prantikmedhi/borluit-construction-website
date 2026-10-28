@@ -1,0 +1,24 @@
+# Borluit Construction
+
+> Residential construction and home building in Assam, India. Building Your Dream Home, One Brick at a Time.
+
+Borluit Construction is a professional residential-construction company helping homeowners realize their dream homes through careful planning and attention to detail.
+
+## Services
+
+- Residential Construction
+- Home Building
+- Planning & Coordination
+
+## Contact
+
+- Primary phone and WhatsApp: +91 9101370326
+- Secondary phone: +91 7002760846
+- Instagram: https://www.instagram.com/borluitconstruction/
+- Service area: Assam, India
+- Website: https://borluit-construction-website.vercel.app/
+
+## Notes
+
+- House images on the site are illustrative residential concepts, not completed client projects.
+- The contact form prepares a WhatsApp draft on the visitor's device; nothing is sent or stored by the site.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://borluit-construction-website.vercel.app/sitemap.xml

@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{company.name}} | Residential Construction and Home Building in Assam</title>
+    <meta name="description" content="{{company.description}} Call or WhatsApp {{phone.primary.display}}." />
+    <link rel="canonical" href="{{company.url}}" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{company.name}}" />
+    <meta property="og:title" content="{{company.name}} | Residential Construction in Assam" />
+    <meta property="og:description" content="{{company.tagline}} {{company.description}}" />
+    <meta property="og:url" content="{{company.url}}" />
+    <meta property="og:image" content="{{company.url}}og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="{{company.name}} logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{company.name}} | Residential Construction in Assam" />
+    <meta name="twitter:description" content="{{company.tagline}}" />
+    <meta name="twitter:image" content="{{company.url}}og-image.png" />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="icon" href="/icon-512.png" type="image/png" sizes="512x512" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preload" href="/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/{{heroImage}}" as="image" fetchpriority="high" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "{{company.name}}",
+        "description": "{{company.description}}",
+        "url": "{{company.url}}",
+        "logo": "{{company.url}}brand/borluit-logo-original.jpg",
+        "image": "{{company.url}}og-image.png",
+        "telephone": ["{{phone.primary.e164}}", "{{phone.secondary.e164}}"],
+        "sameAs": ["{{instagram.url}}"],
+        "areaServed": { "@type": "State", "name": "Assam", "containedInPlace": { "@type": "Country", "name": "India" } },
+        "knowsAbout": ["Residential Construction", "Home Building", "Planning & Coordination"]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container site-header__inner">
+        <a class="brand" href="#top" aria-label="{{company.name}} home">
+          <img
+            class="brand__logo"
+            src="/brand/borluit-logo-original.jpg"
+            alt=""
+            width="998"
+            height="902"
+            decoding="async"
+          />
+          <span class="brand__text">
+            <span class="brand__name">Borluit</span>
+            <span class="brand__sub">Construction</span>
+          </span>
+        </a>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="menu-toggle__bars" aria-hidden="true"></span>
+          <span class="menu-toggle__label">Menu</span>
+        </button>
+
+        <nav class="site-nav" id="primary-nav" aria-label="Primary">
+          <ul class="site-nav__list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#concepts">Concepts</a></li>
+            <li><a href="#why-us">Why us</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <a class="button button--primary site-nav__cta" href="tel:{{phone.primary.e164}}">Call {{phone.primary.display}}</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 2. Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero__image"
+          src="/{{heroImage}}"
+          srcset="/images/hero-house-960.webp 960w, /images/hero-house-1440.webp 1440w, /{{heroImage}} 1536w"
+          sizes="100vw"
+          alt="{{conceptLabel}}: a modern two-storey white house with stone-clad columns, a covered balcony and a front lawn among trees."
+          width="1536"
+          height="1024"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div class="hero__scrim" aria-hidden="true"></div>
+        <div class="container hero__content">
+          <p class="hero__kicker">Residential construction in {{company.region}}</p>
+          <h1 id="hero-title" class="hero__title">{{company.tagline}}</h1>
+          <p class="hero__copy">Careful planning, honest coordination and attention to every detail of your home.</p>
+          <div class="hero__actions">
+            <a class="button button--white" href="#contact">Start a conversation</a>
+            <a class="button button--primary" href="#concepts">View concepts</a>
+          </div>
+        </div>
+        <p class="hero__caption container">{{conceptLabel}}. Not a completed client project.</p>
+      </section>
+
+      <!-- 3. About -->
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container about__grid">
+          <div class="about__text">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title" class="section-title">A residential builder for Assam homes</h2>
+            <p>
+              {{company.name}} is a professional residential-construction company in Assam, India. We help
+              homeowners realize their dream homes through careful planning and attention to detail.
+            </p>
+            <p>
+              Our work is limited to what we do well: residential construction, home building, and the planning
+              and coordination that keeps a build moving. You speak directly with the people managing your home.
+            </p>
+            <ul class="about__points">
+              <li>Residential construction</li>
+              <li>Home building</li>
+              <li>Planning &amp; coordination</li>
+            </ul>
+          </div>
+          <figure class="about__figure">
+            <img
+              src="/images/contemporary-house.webp"
+              alt="{{conceptLabel}}: a two-storey home in white render with dark stone accents, a balcony and a gated drive."
+              width="1536"
+              height="1024"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>{{conceptLabel}}</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 4. Services -->
+      <section class="section section--offwhite services" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Services</p>
+            <h2 id="services-title" class="section-title">Three things, done properly</h2>
+            <p class="section-lede">We keep our scope narrow so each home gets full attention.</p>
+          </div>
+
+          <div class="services__grid">
+            <article class="card card--feature">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 11.5 12 4l9 7.5" /><path d="M5 10v10h14V10" /><path d="M10 20v-6h4v6" />
+                </svg>
+              </span>
+              <h3 class="card__title">Residential Construction</h3>
+              <p>
+                Structural work, masonry, roofing and finishing for houses in Assam. We plan around the monsoon,
+                the site and the way your family will actually live in the home.
+              </p>
+              <p>
+                From foundation to final coat, one team stays accountable for quality and sequence.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="1" /><path d="M3 9h18M9 21V9" />
+                </svg>
+              </span>
+              <h3 class="card__title">Home Building</h3>
+              <p>
+                New homes built brick by brick on your plot, with materials and finishes chosen with you, not for you.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16v16H4z" /><path d="M8 4v16M4 8h4M4 12h4M4 16h4" /><path d="M12 10h5M12 14h5" />
+                </svg>
+              </span>
+              <h3 class="card__title">Planning &amp; Coordination</h3>
+              <p>
+                Drawings, site marking, material scheduling and trade coordination so the build runs in a sensible order.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Concepts gallery -->
+      <section class="section concepts" id="concepts" aria-labelledby="concepts-title">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div>
+              <p class="eyebrow">Concepts</p>
+              <h2 id="concepts-title" class="section-title">Illustrative residential concepts</h2>
+              <p class="section-lede">
+                These pictures are illustrative concepts that show the kind of homes we build. They are not completed
+                client projects.
+              </p>
+            </div>
+            <div class="filters" role="group" aria-label="Filter concepts">
+              {{filters}}
+            </div>
+          </div>
+
+          <ul class="concepts__grid" id="concept-grid">
+            {{concepts}}
+          </ul>
+          <p class="concepts__empty" id="concept-empty" hidden>No concepts in this category yet.</p>
+        </div>
+      </section>
+
+      <!-- 6. Why us -->
+      <section class="section section--charcoal why" id="why-us" aria-labelledby="why-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow eyebrow--on-dark">Why us</p>
+            <h2 id="why-title" class="section-title">A grounded way of building</h2>
+          </div>
+          <ul class="why__list">
+            <li class="why__item">
+              <span class="why__mark" aria-hidden="true"></span>
+              <h3>Planned before built</h3>
+              <p>Drawings, sequence and material choices are settled before work starts, so fewer surprises on site.</p>
+            </li>
+            <li class="why__item">
+              <span class="why__mark" aria-hidden="true"></span>
+              <h3>Built for Assam</h3>
+              <p>Rain, humidity and soil conditions shape how we detail roofs, drainage and foundations.</p>
+            </li>
+            <li class="why__item">
+              <span class="why__mark" aria-hidden="true"></span>
+              <h3>Direct communication</h3>
+              <p>You talk to the people managing your build. Questions get answered by phone or WhatsApp.</p>
+            </li>
+            <li class="why__item">
+              <span class="why__mark" aria-hidden="true"></span>
+              <h3>Attention to detail</h3>
+              <p>Finishing is where a house becomes a home. We take the time to get edges, joints and surfaces right.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 7. Process -->
+      <section class="section process" id="process" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Process</p>
+            <h2 id="process-title" class="section-title">How a build usually unfolds</h2>
+            <p class="section-lede">
+              An indicative proposed workflow. Each home is different, so this is not a guaranteed delivery schedule.
+            </p>
+          </div>
+          <ol class="steps">
+            <li class="step">
+              <span class="step__number" aria-hidden="true">1</span>
+              <h3>Conversation</h3>
+              <p>Tell us about your plot, your family and the home you have in mind.</p>
+            </li>
+            <li class="step">
+              <span class="step__number" aria-hidden="true">2</span>
+              <h3>Planning</h3>
+              <p>Layouts, drawings and a build sequence are prepared and discussed with you.</p>
+            </li>
+            <li class="step">
+              <span class="step__number" aria-hidden="true">3</span>
+              <h3>Coordination</h3>
+              <p>Materials, trades and site logistics are lined up before the first brick.</p>
+            </li>
+            <li class="step">
+              <span class="step__number" aria-hidden="true">4</span>
+              <h3>Construction</h3>
+              <p>Foundation, structure, roof and services, with regular updates from site.</p>
+            </li>
+            <li class="step">
+              <span class="step__number" aria-hidden="true">5</span>
+              <h3>Finishing</h3>
+              <p>Surfaces, fittings and the final walk-through of your home.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 8. Contact -->
+      <section class="section section--offwhite contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact__grid">
+          <div class="contact__intro">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title" class="section-title">Start a conversation</h2>
+            <p class="section-lede">
+              Call, or write a short note and we will prepare a WhatsApp message for you to send.
+            </p>
+
+            <ul class="contact__list">
+              <li>
+                <span class="contact__label">Primary phone &amp; WhatsApp</span>
+                <a class="contact__link" href="tel:{{phone.primary.e164}}">{{phone.primary.display}}</a>
+              </li>
+              <li>
+                <span class="contact__label">Secondary phone</span>
+                <a class="contact__link" href="tel:{{phone.secondary.e164}}">{{phone.secondary.display}}</a>
+              </li>
+              <li>
+                <span class="contact__label">Instagram</span>
+                <a class="contact__link" href="{{instagram.url}}" rel="noopener" target="_blank">{{instagram.handle}}</a>
+              </li>
+            </ul>
+
+            <div class="area-card">
+              <h3 class="area-card__title">Service area</h3>
+              <p>We build residential homes across {{company.region}}. Site visits are arranged by phone.</p>
+              <a class="area-card__link" href="{{mapLink}}" rel="noopener" target="_blank">Assam on the map</a>
+            </div>
+          </div>
+
+          <form class="form" id="contact-form" novalidate aria-describedby="form-note">
+            <p class="form__note" id="form-note">
+              Nothing is sent or stored by this page. After you check the draft, WhatsApp opens on your device and you
+              decide whether to send it.
+            </p>
+
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required minlength="2" />
+              <p class="field__error" id="f-name-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-phone">Phone number</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required pattern="[\+\(\)0-9\s\-]{8,20}" />
+              <p class="field__error" id="f-phone-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-location">Plot or home location</label>
+              <input id="f-location" name="location" type="text" autocomplete="address-level2" required minlength="2" />
+              <p class="field__error" id="f-location-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-message">What are you planning?</label>
+              <textarea id="f-message" name="message" rows="5" required minlength="10"></textarea>
+              <p class="field__error" id="f-message-error" aria-live="polite"></p>
+            </div>
+
+            <button type="submit" class="button button--primary form__submit">Prepare WhatsApp draft</button>
+
+            <div class="draft" id="draft" hidden>
+              <h3 class="draft__title">Your draft</h3>
+              <p class="draft__status">Prepared, not sent. Your details stay in the form.</p>
+              <pre class="draft__text" id="draft-text"></pre>
+              <a class="button button--primary" id="draft-link" href="#" rel="noopener" target="_blank">
+                Open WhatsApp with this draft
+              </a>
+              <p class="draft__hint">Opens a chat with {{phone.primary.display}}. You still press send yourself.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- 9. Footer -->
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand">
+          <img
+            class="site-footer__logo"
+            src="/brand/borluit-logo-original.jpg"
+            alt="{{company.name}} logo"
+            width="998"
+            height="902"
+            loading="lazy"
+            decoding="async"
+          />
+          <p>{{company.description}}</p>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading">Reach us</h2>
+          <ul class="site-footer__list">
+            <li><a href="tel:{{phone.primary.e164}}">{{phone.primary.display}}</a></li>
+            <li><a href="tel:{{phone.secondary.e164}}">{{phone.secondary.display}}</a></li>
+            <li><a href="{{instagram.url}}" rel="noopener" target="_blank">{{instagram.handle}}</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading">On this page</h2>
+          <ul class="site-footer__list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#concepts">Concepts</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p>{{company.name}}, {{company.region}}. House pictures on this site are illustrative concepts.</p>
+      </div>
+    </footer>
+
+    <dialog class="concept-dialog" id="concept-dialog" aria-labelledby="dialog-title">
+      <form method="dialog" class="concept-dialog__bar">
+        <p class="concept-dialog__label">{{conceptLabel}}</p>
+        <button type="submit" class="concept-dialog__close" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+        </button>
+      </form>
+      <img id="dialog-image" src="" alt="" width="1536" height="1024" />
+      <div class="concept-dialog__body">
+        <h2 id="dialog-title" class="concept-dialog__title"></h2>
+        <p id="dialog-description"></p>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

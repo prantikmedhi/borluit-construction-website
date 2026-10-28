@@ -1,0 +1,24 @@
+{
+  "name": "borluit-construction-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static brochure site for Borluit Construction, Assam.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173 --strictPort",
+    "lint": "eslint . && node scripts/lint-html.mjs",
+    "assets": "node scripts/generate-assets.mjs",
+    "contrast": "node scripts/contrast.mjs",
+    "qa": "node scripts/qa.mjs",
+    "check": "npm run lint && npm run build && npm run contrast && npm run qa"
+  },
+  "devDependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "eslint": "^9.0.0",
+    "playwright": "^1.64.1",
+    "sharp": "^0.35.5",
+    "vite": "^8.3.5"
+  }
+}

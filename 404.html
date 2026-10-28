@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found | {{company.name}}</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body class="not-found">
+    <main class="not-found__main" id="main">
+      <a class="brand brand--large" href="/" aria-label="{{company.name}} home">
+        <img src="/brand/borluit-logo-original.jpg" alt="" width="998" height="902" class="brand__logo" />
+      </a>
+      <p class="eyebrow">404</p>
+      <h1 class="section-title">That page is not built yet</h1>
+      <p class="section-lede">The address may be mistyped, or the page has moved.</p>
+      <div class="not-found__actions">
+        <a class="button button--primary" href="/">Back to the home page</a>
+        <a class="button button--secondary" href="tel:{{phone.primary.e164}}">Call {{phone.primary.display}}</a>
+      </div>
+    </main>
+  </body>
+</html>
